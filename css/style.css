@@ -1,0 +1,103 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: skyblue;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.calculator{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator__item{
+    border: 1px solid black;
+    flex: 0 0 35%;
+}
+
+.stickers__items{
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stickers__item{
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+
+}
+.stickers__item.stick--active .stickers__item-img{ 
+
+    transform: scale(1.1);
+
+}
+
+.stickers__item.stick--active .stickers__item-box{ 
+
+    display: block;
+
+}
+
+.stickers__item-img{
+    width: 60px;
+    height: 60px;
+    transition: .5s;
+}
+
+
+.stickers__item-box{
+    position: absolute;
+    top: -30px;
+    right: -190px;
+    z-index: 50;
+    display: none;
+}
+
+.color__item{
+    width: 30px;
+    height: 30px;
+
+}
+
+.stickers__item-color{
+    width: 200px;
+    height: 50px;
+    background-color: #D1D1D1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.black{
+    background-color: black;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
